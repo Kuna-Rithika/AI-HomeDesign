@@ -19,7 +19,7 @@ generation_config = {
 # --- Function to generate home design ideas ---
 def generate_design_idea(style, size, rooms):
     model = genai.GenerativeModel(
-        model_name="gemini-1.5-pro",
+        model_name="gemini-1.5-flash",
         generation_config=generation_config,
     )
 
@@ -78,3 +78,4 @@ if st.button("Generate Design"):
             st.info("No example image found for this style.")
     else:
         st.warning("Please fill all fields before generating.")
+
